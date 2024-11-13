@@ -16,7 +16,7 @@ Login Test Case [ Positive ]
 
 Login test Case [ Negative ]
     [Documentation]  Login Negative Scenario
-    [Tags]  Login_Nagative
+    [Tags]  Login_Negative
     MainApp.Login Negative Scenario
 
 Add Employee Test Case
