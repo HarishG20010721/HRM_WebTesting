@@ -50,9 +50,7 @@ Select Expense Data
     Scroll Element Into View  ${Calander_Month_Value_Locator}
     Click Element  ${Calander_Month_Value_Locator}
     ${DATE_LOCATORS_LIST} =  Get WebElements  ${Calender_Date_Locators}
-    Log To Console  ${DATE_LOCATORS_LIST}
     ${date_elements_count} =  Get Length  ${DATE_LOCATORS_LIST}
-    Log To Console  ${date_elements_count}
     FOR  ${i}  IN RANGE  1  ${date_elements_count}
         ${date_value} =  Get Text  xpath:(//div[@class='oxd-calendar-dates-grid']//div//div)[${i}]
         Run Keyword If  '${date_value}' == '11'  Click Element  xpath:(//div[@class='oxd-calendar-dates-grid']//div//div)[${i}]
